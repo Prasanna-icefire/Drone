@@ -36,6 +36,6 @@ def arm_and_takeoff(aTargetAltitude):
             break
         time.sleep(1)
 
-vehicle = connect('/dev/serial0', wait_ready=True,baud=921600)
+vehicle = connect('/dev/ttyACM0', wait_ready=True,baud=57600)
 
 arm_and_takeoff(20)
